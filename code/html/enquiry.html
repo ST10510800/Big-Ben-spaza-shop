@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Floyd">
+    <meta name="description" content="Submit bulk grocery orders or digital service enquiries to Big Ben Spaza Shop.">
+    <meta name="keywords" content="Big Ben, bulk order, grocery enquiry, airtime topup, South Africa retail">
+    
+    <title>Big Ben Spaza Shop | Bulk Order & Enquiry</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Big Ben Spaza Shop</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Bulk Order & Business Enquiry</h1>
+            <p>Fill out the form below to request bulk grocery pricing, special store orders, or digital service tokens.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Customer Details</legend>
+
+                    <div>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="e.g. Sipho Ndlovu" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number (10 Digits):</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            pattern="[0-9]{10}" 
+                            placeholder="e.g. 0821234567" 
+                            aria-describedby="phone-help"
+                            required
+                        >
+                        <span id="phone-help">Enter a standard 10-digit South African mobile number</span>
+                    </div>
+                    <div>
+                        <label for="order-date">Preferred Pickup/Delivery Date:</label>
+                        <input type="date" id="order-date" name="order-date" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Order Specifications</legend>
+                    <div>
+                        <p>Enquiry Type:</p>
+                        <input type="radio" id="type-bulk" name="enquiry_type" value="bulk_groceries" checked>
+                        <label for="type-bulk">Bulk Groceries & Essentials</label>
+                        
+                        <input type="radio" id="type-digital" name="enquiry_type" value="digital_services">
+                        <label for="type-digital">Digital Services / Bill Top-ups</label>
+
+                        <input type="radio" id="type-general" name="enquiry_type" value="general">
+                        <label for="type-general">General Store Query</label>
+                    </div>
+                    <div>
+                        <p>Categories Required:</p>
+                        <input type="checkbox" id="cat-staples" name="categories" value="staples">
+                        <label for="cat-staples">Maize Meal & Rice Staples</label>
+
+                        <input type="checkbox" id="cat-beverages" name="categories" value="beverages">
+                        <label for="cat-beverages">Cold Drinks & Juices</label>
+
+                        <input type="checkbox" id="cat-electricity" name="categories" value="electricity">
+                        <label for="cat-electricity">Prepaid Electricity Voucher Tokens</label>
+                    </div>
+                    <div>
+                        <label for="comments">Order Items & Special Requirements:</label><br>
+                        <textarea id="comments" name="comments" rows="5" cols="45" placeholder="List item quantities or specific brands required..." required></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit">Submit Order Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Bulk Order Processing Times</h2>
+            <table border="1">
+                <caption>Estimated Delivery & Pickup Timelines</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Order Category</th>
+                        <th scope="col">Minimum Quantity</th>
+                        <th scope="col">Processing Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Groceries & Staples</th>
+                        <td>5 Bulk Packs</td>
+                        <td>24 Hours</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Beverages & Catering</th>
+                        <td>10 Cases</td>
+                        <td>12 Hours</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Same-Day Express</th>
+                        <td colspan="2">Subject to store stock availability</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
