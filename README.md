@@ -21,13 +21,13 @@ In response to Part 1 evaluation feedback regarding sitemap clarity, documentati
 
 ### Detailed Changelog Entries
 
-| Description of Change / Fix Implemented |
-| **Documentation** | Re-structured the primary README.md to explicitly outline all site pages, directory paths, and technical choices. |
-| **Architecture** | Created a visual Draw.io sitemap diagram and placed it prominently within the project architecture documentation to clarify navigation flow. |
-| **HTML5 Semantics** | Updated all `.html` files (`index`, `about`, `services`, `enquiry`, `contact`) with strict HTML5 semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`). |
-| **Forms & Validation** | Enhanced `enquiry.html` form control attributes with regex patterns (`pattern="[0-9]{10}"`), `<label for>` pairings, and `aria-describedby` helper texts. |
-| **CSS Integration** | Built a single external stylesheet `styles.css` in `code/css/` and linked it across all HTML pages using step-up relative paths (`../css/styles.css`). |
-| **Responsive Design** | Added fluid CSS media queries (`@media (max-width: 768px)` and `@media (max-width: 480px)`) to adapt layouts, fonts, and navigation menus across desktop, tablet, and mobile displays. |
+Description of Change / Fix Implemented
+**Documentation:** Re-structured the primary README.md to explicitly outline all site pages, directory paths, and technical choices.
+**Architecture:** Created a visual Draw.io sitemap diagram and placed it prominently within the project architecture documentation to clarify navigation flow.
+**HTML5 Semantics:** Updated all `.html` files (`index`, `about`, `services`, `enquiry`, `contact`) with strict HTML5 semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
+**Forms & Validation:** Enhanced `enquiry.html` form control attributes with regex patterns (`pattern="[0-9]{10}"`), `<label for>` pairings, and `aria-describedby` helper texts.
+**CSS Integration:** Built a single external stylesheet `styles.css` in `code/css/` and linked it across all HTML pages using step-up relative paths (`../css/styles.css`).
+**Responsive Design:** Added fluid CSS media queries (`@media (max-width: 768px)` and `@media (max-width: 480px)`) to adapt layouts, fonts, and navigation menus across desktop, tablet, and mobile displays.
 
 ---
 
