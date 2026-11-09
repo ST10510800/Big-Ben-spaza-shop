@@ -1,4 +1,4 @@
-# WEDE5020 - Part 2: CSS Styling & Responsive Web Design
+# WEDE5020 - Part 3: Interactive Features, Client Validation & SEO Implementation
 
 **Student Name:** Rivoningo Floyd Ntsonani  
 **Student Number:** ST10510800  
@@ -9,25 +9,27 @@
 
 ## 1. Project Overview & Repository Access
 
-This repository contains the complete responsive web application for **Big Ben Spaza Shop** alongside a personal developer portfolio. Part 2 introduces modular external CSS styling, flexible box and grid layout architectures, interactive pseudo-class states, and custom media queries for complete cross-device responsiveness.
+This repository contains the complete responsive web application for **Big Ben Spaza Shop** alongside a personal developer portfolio. Part 3 introduces interactive JavaScript dynamic functionality, custom client-side form validation, interactive Google Maps integration, search engine optimization (`sitemap.xml`, `robots.txt`), and automated root routing for live GitHub Pages deployment.
 
 * **GitHub Repository:** `https://github.com/ST10510800/Big-Ben-spaza-shop`
+* **Live Web Application:** `https://ST10510800.github.io/Big-Ben-spaza-shop/`
 
 ---
 
-## 2. Feedback from Part 1 & Detailed Changelog
+## 2. Detailed Changelog & Part 3 Implementations
 
-In response to Part 1 evaluation feedback regarding sitemap clarity, documentation depth, and structural organization, the following comprehensive changes were implemented across the code base and repository:
+### Interactive JavaScript Features (`code/js/script.js`)
+* **Dynamic Product Search & Filtering:** Implemented a real-time JavaScript search and category filter on `services.html` allowing users to query catalog items without page reloads.
+* **Image Lightbox Modal:** Built an interactive image lightbox viewer enabling users to view full-resolution product images.
+* **Client-Side Form Validation:** Added custom JavaScript validation logic for `enquiry.html` and `contact.html` forms to validate inputs dynamically before submission.
 
-### Detailed Changelog Entries
+### Location & Content Integration
+* **Interactive Google Map:** Integrated an interactive Google Maps `iframe` into `contact.html` displaying physical store locations and driving directions.
 
-Description of Change / Fix Implemented
-**Documentation:** Re-structured the primary README.md to explicitly outline all site pages, directory paths, and technical choices.
-**Architecture:** Created a visual Draw.io sitemap diagram and placed it prominently within the project architecture documentation to clarify navigation flow.
-**HTML5 Semantics:** Updated all `.html` files (`index`, `about`, `services`, `enquiry`, `contact`) with strict HTML5 semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
-**Forms & Validation:** Enhanced `enquiry.html` form control attributes with regex patterns (`pattern="[0-9]{10}"`), `<label for>` pairings, and `aria-describedby` helper texts.
-**CSS Integration:** Built a single external stylesheet `styles.css` in `code/css/` and linked it across all HTML pages using step-up relative paths (`../css/styles.css`).
-**Responsive Design:** Added fluid CSS media queries (`@media (max-width: 768px)` and `@media (max-width: 480px)`) to adapt layouts, fonts, and navigation menus across desktop, tablet, and mobile displays.
+### SEO & GitHub Pages Deployment Optimization
+* **Search Engine Crawling:** Generated and deployed valid `sitemap.xml` and `robots.txt` files at the repository root level.
+* **On-Page Meta Tags:** Standardized meta descriptions, canonical URLs, author information, and structured heading hierarchies across all pages.
+* **Root Routing Fix:** Created a root-level `index.html` redirection script to route traffic entering the repository root directly into `code/html/index.html`.
 
 ---
 
@@ -36,7 +38,7 @@ Description of Change / Fix Implemented
 1. Chacon, S., & Straub, B. (2014). *Pro Git* (2nd ed.). Apress.
 2. Google. (2026). *Gemini AI: Conversational AI Model for Code Formatting, Technical Debugging, and Web Architecture Guidance*. Google AI. https://gemini.google.com/
 3. JGraph. (2026). *Draw.io (Diagrams.net) User Documentation and Visual Architecture Design Guidelines*. JGraph Ltd. https://www.draw.io/
-4. MDN Web Docs. (2026). *CSS Building Blocks*. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks
-5. MDN Web Docs. (2026). *HTML Forms and Data Validation*. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Learn/Forms
+4. MDN Web Docs. (2026). *Client-side Form Validation, Dynamic DOM Manipulation & Events*. Mozilla Developer Network. https://developer.mozilla.org/en-US/docs/Learn/Forms
+5. Sitemaps.org. (2026). *Sitemap XML Format Protocol (v0.9 Specifications)*. https://www.sitemaps.org/protocol.html
 6. W3C. (2021). *HTML5 Specification*. World Wide Web Consortium. https://www.w3.org/TR/html52/
 7. W3C. (2023). *Web Content Accessibility Guidelines (WCAG) 2.2*. World Wide Web Consortium. https://www.w3.org/TR/WCAG22/
